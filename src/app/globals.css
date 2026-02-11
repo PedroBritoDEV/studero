@@ -1,26 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Light Theme - Soft Gray Concept */
+@theme {
+  /* Cores de marca mais lavadas (pastéis profundos) */
+  --color-primary: #5271FF;        
+  --color-primary-hover: #3D5AFE;
+
+  --color-secondary: #8B5CF6;
+  
+  /* FUNDO: Cinza suave que "absorve" a luz */
+  --color-background: #E2E8F0;     /* Slate 200 - Um cinza claro e frio */
+  --color-surface: #F1F5F9;        /* Slate 100 - Levemente mais claro que o fundo */
+  --color-border: #CBD5E1;         /* Slate 300 - Contraste baixo para as bordas */
+
+  /* TEXTO: Azul acinzentado para não ser tão "agressivo" quanto o preto */
+  --color-title: #334155;          /* Slate 700 */
+  --color-body: #475569;           /* Slate 600 */
+  --color-muted: #64748B;          /* Slate 500 */
+
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Dark Theme - Deep Charcoal (Mais suave que o preto) */
+.dark {
+  --color-primary: #60A5FA;
+  --color-primary-hover: #93C5FD;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* FUNDO: Cinza grafite profundo */
+  --color-background: #1E293B;     /* Slate 900 */
+  --color-surface: #334155;        /* Slate 800 - Camada levemente mais clara */
+  --color-border: #475569;         /* Slate 700 */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* TEXTO: Cinza azulado para evitar o efeito "neon" */
+  --color-title: #E2E8F0;          /* Slate 200 */
+  --color-body: #94A3B8;           /* Slate 400 */
+  --color-muted: #64748B;          /* Slate 500 */
 }
