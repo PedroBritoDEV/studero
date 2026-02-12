@@ -3,11 +3,13 @@
 /* Light Theme - Soft Gray Concept */
 @theme {
   /* Cores de marca mais lavadas (pastéis profundos) */
-  --color-primary: #5271FF;        
-  --color-primary-hover: #3D5AFE;
+  --color-primary: #75B06F;        
+  --color-primary-hover: #5E9A58;
 
-  --color-secondary: #8B5CF6;
+  --color-secondary: #492669;
   
+  --color-tertiary: #F97D2A;        /* Amarelo dourado para detalhes e destaques */
+
   /* FUNDO: Cinza suave que "absorve" a luz */
   --color-background: #E2E8F0;     /* Slate 200 - Um cinza claro e frio */
   --color-surface: #F1F5F9;        /* Slate 100 - Levemente mais claro que o fundo */
