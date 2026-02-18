@@ -16,9 +16,12 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="min-h-screen flex flex-col md:flex-row bg-background" cz-shortcut-listen="true">
+      <body
+        className="min-h-screen flex flex-col md:flex-row bg-background"
+        cz-shortcut-listen="true"
+      >
         <Header />
-          <div className="flex-1 flex items-center justify-center ">
+        <div className="flex-1 w-full h-full p-4 flex justify-center ">
           {children}
         </div>
         <Footer />
