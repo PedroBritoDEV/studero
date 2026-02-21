@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import "tailwindcss";
+
 
 /* Light Theme - Soft Gray Concept */
 @theme {
   /* Cores de marca mais lavadas (pastéis profundos) */
-  --color-primary: #75B06F;        
-  --color-primary-hover: #5E9A58;
+  --color-primary: #6D28D9;        
+  --color-primary-hover: #9333EA;
 
   --color-secondary: #492669;
   
   --color-tertiary: #F97D2A;        /* Amarelo dourado para detalhes e destaques */
 
   /* FUNDO: Cinza suave que "absorve" a luz */
-  --color-background: #E2E8F0;     /* Slate 200 - Um cinza claro e frio */
-  --color-surface: #F1F5F9;        /* Slate 100 - Levemente mais claro que o fundo */
-  --color-border: #CBD5E1;         /* Slate 300 - Contraste baixo para as bordas */
+  --color-background: #f1f5f8;     
+  --color-surface: #dfe2e6;        
+  --color-border: #CBD5E1;        
 
   /* TEXTO: Azul acinzentado para não ser tão "agressivo" quanto o preto */
-  --color-title: #334155;          /* Slate 700 */
+  --color-title: #0a0c10;          /* Slate 700 */
   --color-body: #475569;           /* Slate 600 */
   --color-muted: #64748B;          /* Slate 500 */
 
@@ -24,6 +27,7 @@
   --color-warning: #F59E0B;
   --color-error: #EF4444;
   --color-info: #3B82F6;
+
 }
 
 /* Dark Theme - Deep Charcoal (Mais suave que o preto) */
@@ -40,4 +44,8 @@
   --color-title: #E2E8F0;          /* Slate 200 */
   --color-body: #94A3B8;           /* Slate 400 */
   --color-muted: #64748B;          /* Slate 500 */
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }

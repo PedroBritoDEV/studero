@@ -4,9 +4,9 @@
 
 export default function Profile() {
   return (
-    <header className="flex items-center justify-between bg-gray-100 p-4 shadow-md">
+    <header className="flex items-center justify-between p-4">
       <div className="flex items-center justify-center gap-2">
-        <img src="/images/logo-studero.png" alt="logo-studero" className="w-8"/>
+        <img src="/images/logo-studero.png" alt="logo-studero" className="w-12"/>
       </div>
 
       <div className="flex items-center gap-2">
