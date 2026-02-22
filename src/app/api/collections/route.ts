@@ -1,4 +1,3 @@
-import { NextResponse } from "next/server";
 import prismaClient from "@/lib/prismaClient";
 import { successResponse, errorResponse } from "@/lib/apiResponse";
 

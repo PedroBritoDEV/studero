@@ -4,6 +4,7 @@ import SectionDivider from "@/components/ui/sectionDivider";
 import { getCollections, deleteCollection } from "@/services/collectionService";
 import { useEffect, useState } from "react";
 import { ResponseCollections } from "@/types/colections/ResponseCollections";
+import Link from "next/link";
 
 export default function Flashcards() {
   const [collections, setCollections] = useState<ResponseCollections[]>([]);
@@ -46,15 +47,18 @@ export default function Flashcards() {
         )}
 
         {collections.map((collection) => (
-          <div
-            key={collection.id}
-            className="bg-white/60 rounded-lg px-4 py-2 shadow-md  flex items-center justify-between"
-          >
-            <h2 className="font-medium text-body text-lg">
+          <Link key={collection.id} href={`/flashcards/${collection.id}`}>
+            <div className="cursor-pointer">
+              <div
+                className="bg-white/60 rounded-lg px-4 py-2 shadow-md  flex items-center justify-between"
+              >
+                <h2 className="font-medium text-body text-lg">
               {collection.name}
-            </h2>
-            <i onClick={() => handleDeleteCollection(collection.id)} className="fa-solid fa-trash p-3 text-sm bg-linear-to-tl from-primary to-primary-hover text-white rounded-full cursor-pointer"></i>
-          </div>
+                </h2>
+              <i onClick={() => handleDeleteCollection(collection.id)} className="fa-solid fa-trash p-3 text-sm bg-linear-to-tl from-primary to-primary-hover text-white rounded-full cursor-pointer"></i>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
