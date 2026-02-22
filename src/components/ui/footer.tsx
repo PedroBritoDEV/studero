@@ -14,7 +14,7 @@ export default function Header() {
   ];
 
   return (
-    <footer className="order-2 bg-primary text-white h-22 flex items-center justify-center rounded-t-2xl py-4">
+    <footer className="order-2 bg-surface/70 text-body font-medium h-22 flex items-center justify-center rounded-3xl py-2 px-5 m-2">
       <ul className="flex justify-around w-full">
         {items.map((item, index) => (
           <li key={item.name}>
@@ -24,7 +24,7 @@ export default function Header() {
                 className={`flex items-center justify-center gap-2 w-18 h-16 p-4 rounded-2xl transition-all duration-300  ${
                   active === index
                     ? "bg-white/60 text-body shadow-2xl"
-                    : "text-white/70 hover:text-white"
+                    : "text-body hover:text-white/50"
                 }`}
               >
                 <div className="flex flex-col justify-center items-center">
