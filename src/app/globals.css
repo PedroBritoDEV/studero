@@ -46,6 +46,16 @@
   --color-muted: #64748B;          /* Slate 500 */
 }
 
-* {
+/* * {
   font-family: "Poppins", sans-serif;
+} */
+
+/* Esconde scrollbar mas mantém scroll funcionando */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE e Edge */
+  scrollbar-width: none;     /* Firefox */
 }
